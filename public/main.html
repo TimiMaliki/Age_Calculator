@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age ID</title>
+    <title>Age</title>
     <link rel="stylesheet" href="../public/src/css/main.css">
 </head>
 <body>
     <div class="Age_box">
         <div class="form">
-            <h2>Calculate Your Year</h2>
+            <h2>Calculate Your BirthYear</h2>
         <form action="">
-            <input type="number" placeholder="Enter Your Age" required id="input" >
+            <input type="number" placeholder="Enter Your Age" required id="myAge" >
         </form>
-        <button class="btn" id="button">Submit</button>
+        <button class="btn" id="button" onclick="age()">Submit</button>
         </div>
-        
+        <div id="check" class="check"></div>
     </div>
+    
 </body>
 <script src="./src/js/main.js"></script>
 </html>

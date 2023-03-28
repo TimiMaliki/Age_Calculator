@@ -1,39 +1,24 @@
+function age(){
 
- const inputForm = document.querySelector('#input');
-  const btn = document.querySelector('#button');
-
-
-
-
-
- let newDate = new Date(1999,5,11);
-    birthDay = newDate.getFullYear();
-
-    let  presentYear = new Number(2023);
-
-     let age = presentYear - birthDay;
-
+  let myage = document.getElementById("myAge").value;
+  let display = document.getElementById("check").value;
    
 
-//    inputForm = calcAge => {
+  let yr1 = new Date();
+  let year = yr1.getFullYear();
 
-//     let newDate = new Date(1999,5,11);
-//    birthDay = newDate.getFullYear();
+    birthday = myage;
 
-//    let  presentYear = new Number(2023);
+  if( year > myage){
+    birthday = birthday;
+    calAge = year - birthday
+  }
+  else{
+    console.log("no");
+  }
 
-//     let age = presentYear - birthDay;
-//    }
+document.getElementById('check').innerText = "Your Year is " + calAge
 
-    button.addEventListener('click' , () =>{
-        console.log(age);
-             })
-
-  
-
-
-
-
-
-
+}
+age();
 

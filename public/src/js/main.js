@@ -1,24 +1,38 @@
-function age(){
+function calAge(year, birthday) {
 
-  let myage = document.getElementById("myAge").value;
-  let display = document.getElementById("check").value;
-   
+  return year - birthday;
 
-  let yr1 = new Date();
-  let year = yr1.getFullYear();
+}
 
-    birthday = myage;
 
-  if( year > myage){
+
+
+function age() {
+
+  const myage = document.getElementById("myAge").value;
+  
+
+
+  let currentYear = new Date();
+  let year = currentYear.getFullYear();
+
+  let birthday = myage;
+
+  let currentAge;
+  if (year > myage) {
     birthday = birthday;
-    calAge = year - birthday
+
+     currentAge =
+      calAge(year, birthday);
+
+    // calAge = year - birthday
   }
-  else{
+  else {
     console.log("no");
   }
 
-document.getElementById('check').innerText = "Your Year is " + calAge
+  document.getElementById('check').innerText = "Your Year is " + currentAge
 
 }
-age();
+
 
